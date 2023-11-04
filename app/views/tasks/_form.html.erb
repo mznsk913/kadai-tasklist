@@ -9,11 +9,13 @@
     </div>
   <% end %>
   
-  <%= f.label :title, 'タイトル' %>
-  <%= f.text_field :title %>
+  <%= f.label :status, 'ステータス' %>
+  <%= f.text_field :status %>
+  <br>
   
   <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
+  <br>
 
   <%= f.submit '登録' %>
 <% end %>
