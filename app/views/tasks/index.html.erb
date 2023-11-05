@@ -1,3 +1,13 @@
+<% if logged_in? %>
+  <p>ログイン完了ユーザ: <%= current_user.name %></p>
+<% else %>
+<div class="bg-secondary p-3 p-sm-5 my-4 rounded">
+  <div class="text-center text-white">
+    <h1>Welcome to the Microposts</h1>
+    <%= link_to 'Sign up now!', signup_path, class: 'btn btn-lg btn-primary' %>
+  </div>
+</div>
+<% end %>
 <h1>メッセージ一覧</h1>
 
 <ul>
@@ -7,3 +17,4 @@
 </ul>
 
 <%= link_to '新規タスクの登録', new_task_path %>
+
